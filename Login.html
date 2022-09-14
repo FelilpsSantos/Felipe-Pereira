@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ponto do Nerd</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><a href="./Home.html"><img src="../IMG/Ponto nerd.png"></a></h1>
+
+				<nav>
+					<ul>
+						
+						<li><a href="Home.html">Home</a></li>
+						<li><a href="Login.html">Login</a></li>
+						
+						
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+    <style>
+
+{
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+form{
+    width: 300px;
+    margin: 200px auto;
+    text-align: center;
+}
+
+input{
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+    height: 30px;
+}
+
+    </style>
+</head>
+<body>
+
+    <form >
+
+        <h3>Login</h3>
+        <input type="text" placeholder="Login" id="Login">
+        <input type="password" placeholder="Senha" id="Senha">
+        <button onclick="logar()">Enviar </button>
+
+    </form>
+
+    <script>
+
+
+        function logar(){
+
+            let Login = document.querySelector('#Login').value;
+            let Senha = document.querySelector('#Senha').value;
+
+            if(Login=="admin" && Senha=="admin"){
+              window.location.href='./index.html'
+            }else{
+                alert('usuario ou senha incorreta')
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
+<footer>
+    <p class="copyright">&copy;Copyright Ponto do Nerd - 2022</p>
+</footer>
+</body>
+</html>
